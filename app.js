@@ -5,11 +5,14 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 require('dotenv').config();
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
 
 const app = express();
+
+app.use(cors());
 
 // Database setup
 mongoose.set("strictQuery", false);
