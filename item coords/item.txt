@@ -1,0 +1,47 @@
+Grandbazaar
+1. food stall
+- 941, 400
+
+2. orange cat
+265, 421
+
+3. yellow suitcase
+590, 335
+
+4. Pink bag
+1154, 689
+
+5. Shopping bag
+133, 692
+
+Future City
+1. pencil in chair
+- 1365, 378
+
+2. octpus with hat
+- 414, 590
+
+3. BB8
+- 847, 1096
+
+4. Sad pickle
+- 1496, 744
+
+5. Penguin delivery
+- 84, 998
+
+Infinite Expanses
+1. Basketball
+- 1406, 882
+
+2. Wave
+- 522, 4796
+
+3. Resigned
+- 837, 3073
+
+4. Alien
+- 2570, 7933
+
+5. Guitar
+- 1072, 4955

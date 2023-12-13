@@ -22,4 +22,13 @@ router.get('/games', game_controller.game_list);
 // Get individual game
 router.get('/games/:gameId', game_controller.game_detail);
 
+// Get items for a game
+router.get('/games/:gameId/items', game_controller.get_items);
+
+// Get game image
+router.get('/image/:gameId', game_controller.game_image);
+
+// Get item image
+router.get('/image/:gameId/:itemId', game_controller.item_image);
+
 module.exports = router;

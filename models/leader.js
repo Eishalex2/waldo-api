@@ -4,8 +4,9 @@ const { DateTime } = require('luxon');
 const Schema = mongoose.Schema;
 
 const LeaderSchema = new Schema({
+  _id: { type: Schema.Types.ObjectId, required: true},
   username: { type: String, required: true },
-  completion_time: { type: Number, required: true },
+  completion_time: { type: String, required: true },
   timestamp: { type: Date, default: Date.now() },
   game: { type: Schema.Types.ObjectId, ref: "Game", required: true }
 });
