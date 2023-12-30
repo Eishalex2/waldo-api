@@ -23,10 +23,16 @@ exports.game_detail = asyncHandler(async (req, res, next) => {
 
 // Get all items for a game
 exports.get_items = asyncHandler(async (req, res, next) => {
-  const allItems = await Item.find({game: req.params.gameId});
+  const allItems = await Item.find({}).exec();
 
   res.json(allItems);
 });
+
+exports.get_gameItems = asyncHandler(async (req, res, next) => {
+  const gameItems = await Item.find({game: req.params.gameId}).exec();
+
+  res.json(gameItems);
+})
 
 exports.game_image = asyncHandler(async (req, res, next) => {
   const game = await Game.findById(req.params.gameId).exec();
