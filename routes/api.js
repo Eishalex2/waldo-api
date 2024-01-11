@@ -11,6 +11,9 @@ router.get("/", (req, res, next) => res.send("Homepage"));
 // Add new leaderboard entry
 router.post('/leaders/:gameId', leader_controller.leader_create);
 
+// Get all leaderboard entries
+router.get('/leaders', leader_controller.get_leaders)
+
 // Get leaderboard entries for a game
 router.get('/leaders/:gameId', leader_controller.leader_list);
 
