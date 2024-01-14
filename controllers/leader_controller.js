@@ -3,10 +3,10 @@ const { body, validationResult } = require('express-validator');
 const Leader = require('../models/leader');
 
 exports.get_leaders = asyncHandler(async (req, res, next) => {
-  const leaders = await Leader.find({ completion_time: 1}).exec();
+  const allLeaders = await Leader.find({}).exec();
 
-  res.json(leaders);
-})
+  res.json(allLeaders);
+});
 
 exports.leader_list = asyncHandler(async (req, res, next) => {
   const leaders = await Leader.find({game: req.params.gameId}).sort({completion_time: 1}).exec();

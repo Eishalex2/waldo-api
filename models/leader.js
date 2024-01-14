@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const LeaderSchema = new Schema({
   username: { type: String, required: true },
-  completion_time: { type: String, required: true },
+  completion_time: { type: Number, required: true },
   timestamp: { type: Date, default: Date.now() },
   game: { type: Schema.Types.ObjectId, ref: "Game", required: true }
 });
